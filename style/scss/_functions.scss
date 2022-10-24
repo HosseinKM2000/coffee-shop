@@ -1,0 +1,8 @@
+@function calc2($a,$t){
+    $m : $t;
+  @return $a / 16 + $m
+};
+
+@function calcD($a,$b){
+    @return ($a/$b)*100%
+}

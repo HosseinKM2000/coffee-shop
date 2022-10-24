@@ -1,0 +1,52 @@
+@keyframes shadow {
+    0%{box-shadow: 0px 0px calc2(0,rem) white ; border: solid white 3px ;color: white};
+    50%{border: none;color: black;}
+    100%{box-shadow: 0px 0px calc2(100,rem)}
+}
+.animation-shadow{
+    animation: shadow 2s 1s 1;
+}
+
+@keyframes scale {
+    50%{transform: scale(0.8,0.8);color: white;}
+    100%{transform: scale(1,1);color: black;}
+}
+.animation-scale{
+    animation: scale 0.8s ;
+}
+
+@keyframes animat-cool {
+    0%{opacity: 0;};
+    20%{opacity: 1;transform: translateY(-95px)};
+    40%{opacity: 1;transform: translateY(-95px)};
+    80%{opacity: 1;transform: translateY(-95px)};
+    85%{opacity: 0;}
+    100%{transform: translateY(-230px)};
+}
+
+@keyframes scale-text {
+    0%{transform: scale(0);opacity: 0;};
+    10%{transform:scale(1);opacity: 1;};
+    90%{transform:scale(1);opacity: 1;};
+    95%{opacity: 0;}
+    100%{transform:scale(0);};
+}
+
+@keyframes rotat-text {
+    0%{transform: scale(0);opacity: 0;transform: rotate(1000deg);};
+    10%{transform:scale(1);opacity: 1;transform: rotate(0deg)};
+    90%{transform:scale(1);opacity: 1;transform: rotate(0deg)};
+    95%{opacity: 0;}
+    100%{transform:scale(0);transform: rotate(1000deg);};
+}
+@keyframes skew-text {
+    0%{transform: translate(-100px,10px);};
+    5%{transform:translate(10px,10px);;opacity: 1;};
+    90%{transform:translate(10px,10px);opacity: 1;};
+    95%{opacity: 0;}
+    100%{transform:translate(-100px,10px);};
+}
+@keyframes scale-button{
+   50%{transform:scale(0.8) ;}
+   100%{transform: scale(1);}
+}
